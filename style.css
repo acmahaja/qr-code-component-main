@@ -33,9 +33,10 @@ section {
   border-radius: 17px;
   padding: 1rem;
   text-align: center;
-    -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0rem 3rem 4rem -2rem var(--grayish-blue);
 }
 
 section img {
@@ -75,7 +76,6 @@ section .description {
 }
 
 @media screen and (max-width: 376px) {
-
   section {
     height: 500px;
     width: 320px;
@@ -84,16 +84,16 @@ section .description {
   }
 
   section p {
-      padding: 0em 1rem;
+    padding: 0em 1rem;
   }
-  section .title{
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
+  section .title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   section .description {
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
   }
 
   .attribution {
