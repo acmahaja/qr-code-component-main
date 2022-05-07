@@ -1,73 +1,102 @@
 :root {
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --grayish-blue: hsl(220, 15%, 55%);
-    --dark-blue: hsl(218, 44%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
 }
 
 html {
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    background-color: var(--light-gray);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--light-gray);
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
-    background-color: white;
-    height: 495px;
-    width: 320px;
-    border-radius: 17px;
-    padding: 15px;
-    text-align: center;
+  background-color: white;
+  height: 495px;
+  width: 320px;
+  border-radius: 17px;
+  padding: 1rem;
+  text-align: center;
+    -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 section img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 section p {
-    padding: 0px 20px ;
-    margin: 15px 0px;
+  padding: 0px 1.333rem;
+  margin: 1rem 0px;
 }
 
 section .title {
-    font-size: 1.6rem;
-    color: var(--dark-blue);
-    font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
 section .description {
-    font-size: 1rem;
-    color: var(--grayish-blue);
-    font-weight: 400;
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  font-weight: 400;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 1em;
-    font-size: 1.125rem;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 1em;
+  font-size: 1.125rem;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+
+  section {
+    height: 500px;
+    width: 320px;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  section p {
+      padding: 0em 1rem;
+  }
+  section .title{
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+  }
+
+  section .description {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+  }
+
+  .attribution {
+    font-size: 0.9rem;
+  }
 }
