@@ -31,13 +31,31 @@ section {
     height: 495px;
     width: 320px;
     border-radius: 17px;
-    padding: 16px;
+    padding: 15px;
+    text-align: center;
 }
 
 section img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+section p {
+    padding: 0px 20px ;
+    margin: 15px 0px;
+}
+
+section .title {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+section .description {
+    font-size: 1rem;
+    color: var(--grayish-blue);
+    font-weight: 400;
 }
 
 .attribution {
